@@ -1,0 +1,3 @@
+/home/pavel/Documents/Универ/МатАн/ИДЗ_4_2/IDZ_4_2/cmake-build-debug/CMakeFiles/IDZ.dir
+/home/pavel/Documents/Универ/МатАн/ИДЗ_4_2/IDZ_4_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pavel/Documents/Универ/МатАн/ИДЗ_4_2/IDZ_4_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
