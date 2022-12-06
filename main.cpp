@@ -22,13 +22,18 @@ public:
         std::vector<double> y_i = y_0;
         for (int i = 0; i < y_i.size(); i++) {
             files[i] << x_0 << ' ' << y_0[i] << '\n';
+            std::cout << '\n' << x_0 << ' ' << y_0[i];
         }
         for (int i = 0; i < n; i++) {
             double x_i = x_0 + i * h;
             std::vector<double> new_y_i(y_i.size());
+            if (i % static_cast<int>(n / 10) == 0)
+                std::cout << '\n' << x_i + h << ' ';
             for (int j = 0; j < y_i.size(); j++) {
                 new_y_i[j] = y_i[j] + h * functions[j](x_i, y_i);
                 files[j] << x_i + h << ' ' << new_y_i[j] << '\n';
+                if(i % static_cast<int>(n / 10) == 0)
+                    std::cout << new_y_i[j] << ' ';
             }
             y_i = new_y_i;
         }
@@ -810,7 +815,7 @@ void adams_moulton_4() {
 }
 
 int main(){
-    adams_moulton_4();
+    euler();
 
     return 0;
 }
